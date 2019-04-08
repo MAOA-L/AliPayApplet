@@ -32,7 +32,7 @@
 .todo-items {
   flex-grow: 1;
   font-size: 34rpx;
-  padding: 50rpx 120rpx;
+  padding: 50rpx 50rpx;
   color: #0EFFD6;
   overflow: auto;
 }
@@ -112,8 +112,12 @@
 .checked.todo-item::after {
   opacity: 1;
 }
-
-
+.info-bar{
+  display: flex;
+}
+icon{
+  padding: 0 10rpx 0 0;
+}
 
 .todo-footer {
   flex-shrink: 0;

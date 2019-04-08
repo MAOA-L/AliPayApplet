@@ -8,7 +8,7 @@
     <view class="nickname">{{user.nickName && user.nickName + '\'s' || 'My'}} Todo List</view>
   </view> -->
 
-  <view class="todo-items">
+  <!-- <view class="todo-items">
 
     <checkbox-group class="todo-items-group" onChange="onTodoChanged">
       <label a:for="{{todos}}" a:for-item="item" class="todo-item {{item.completed ? 'checked' : ''}}" a:key="*this">
@@ -17,6 +17,22 @@
       </label>      
     </checkbox-group>
 
+  </view> -->
+  <view class="todo-items">
+    <view class="info-bar">
+      <view style="flex:1">
+        <icon type="waiting" size="14" color="" />
+        时间:<text>132</text>        
+      </view>
+      <view style="flex:1">
+        <icon type="info" size="14" color="green" />
+        分类:<text>132</text>        
+      </view>
+      <view style="flex:1">
+        <icon type="search" size="14" color="" />
+        浏览数:<text>132</text>        
+      </view>
+    </view>
   </view>
 
   <view class="todo-footer">
